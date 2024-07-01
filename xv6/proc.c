@@ -419,7 +419,10 @@ sched(void)
     panic("sched running");
   if(readeflags()&FL_IF)
     panic("sched interruptible");
-  intena = mycpu()->intena;  
+  intena = mycpu()->intena;
+
+  p->context_switches++; // Increment context switch counter
+  
   swtch(&p->context, mycpu()->scheduler);
   mycpu()->intena = intena;
 }
