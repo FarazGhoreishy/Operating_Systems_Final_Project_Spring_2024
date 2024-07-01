@@ -578,3 +578,21 @@ procdump(void)
     cprintf("\n");
   }
 }
+
+int csc(int pid)
+{
+  struct proc *process;
+
+  acquire(&ptable.lock);
+
+  for (process = ptable.proc; process < &ptable.proc[NPROC]; process++)
+  {
+    if (process->pid == pid)
+    {
+      cprintf("Number of Context Switches for process %s: is %d", process->name, process->context_switches);
+    }
+  }
+
+  release(&ptable.lock);
+  return 69;
+}
