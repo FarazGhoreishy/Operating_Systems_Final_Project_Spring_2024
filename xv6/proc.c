@@ -606,4 +606,6 @@ int gtat(void)
   struct proc* process = myproc();
 
   cprintf("Turnaround time for process %s is: %d\n", process->name, process->end_time - process->start_time);
+  
+  return 70;
 }
