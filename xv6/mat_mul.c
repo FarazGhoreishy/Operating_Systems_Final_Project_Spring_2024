@@ -57,7 +57,8 @@ int main(int argc, char *argv[])
             for (int k = 0; k < MATRIX_SIZE; k++) 
                 C[i][j] += A[i][k] * B[k][j];
     
-    printf(1, "Result matrix:\n");
+    printf(1, "----------Matrix Multiplication----------\n");
+    printf(1, "Result Matrix =\n");
 
     for (int i = 0; i < MATRIX_SIZE; i++) 
     {
@@ -69,5 +70,7 @@ int main(int argc, char *argv[])
     }
 
     csc(getpid());
+    // ctat(getpid());
+    printf(1, "Turnaround Time for this process is %d\n", ctat());
     exit();
 }
