@@ -180,7 +180,6 @@ int main(int argc, char *argv[])
     printf(1, "----------PSNR Calculation----------\n");
     printf(1, "PSNR = %d.%d\n", (int) psnr, (int) psnr * 100 % 100);
     csc(getpid());
-    // ctat(getpid());
-    printf(1, "Turnaround Time for this process is %d\n", ctat());
+    gtat();
     exit();
 }

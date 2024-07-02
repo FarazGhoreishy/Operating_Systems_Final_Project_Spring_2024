@@ -30,7 +30,6 @@ int main()
     }
     
     csc(getpid());
-    // ctat(getpid());
-    printf(1, "Turnaround Time for this process is %d\n", ctat());
+    gtat():
     exit();
 }
