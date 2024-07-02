@@ -54,6 +54,9 @@ struct proc {
   int current_timeslice;       // Current time slice for the process
   
   int context_switches;        // Number of context switches for the process
+
+  uint start_time;             // Process start time
+  uint end_time;               // Process end time
 };
 
 // Process memory is laid out contiguously, low addresses first:
