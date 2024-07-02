@@ -589,10 +589,17 @@ int csc(int pid)
   {
     if (process->pid == pid)
     {
-      cprintf("Number of Context Switches for process %s: is %d\n", process->name, process->context_switches);
+      cprintf("Number of Context Switches for process %s is: %d\n", process->name, process->context_switches);
     }
   }
 
   release(&ptable.lock);
   return 69;
+}
+
+int gtat(void)
+{
+  struct proc* process = myproc();
+
+  cprintf("Turnaround time for process %s is: %d\n", process->name, process->end_time - process->start_time);
 }

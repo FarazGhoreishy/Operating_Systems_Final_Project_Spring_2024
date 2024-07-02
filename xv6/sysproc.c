@@ -99,3 +99,8 @@ int sys_csc(void)
   
   return csc(pid);
 }
+
+int sys_gtat(void)
+{
+  return gtat();
+}
