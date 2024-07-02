@@ -30,6 +30,6 @@ int main()
     }
     
     csc(getpid());
-    gtat():
+    gtat();
     exit();
 }
