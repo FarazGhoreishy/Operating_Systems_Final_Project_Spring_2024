@@ -216,6 +216,8 @@ fork(void)
 
   np->state = RUNNABLE;
 
+  np->start_time = ticks; // Initialize start time
+
   release(&ptable.lock);
 
   return pid;
