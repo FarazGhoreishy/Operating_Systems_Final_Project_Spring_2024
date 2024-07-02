@@ -236,7 +236,7 @@ exit(void)
   if(curproc == initproc)
     panic("init exiting");
 
-  p->end_time = ticks;  // Set end time
+  curproc->end_time = ticks;  // Set end time
   
   // Close all open files.
   for(fd = 0; fd < NOFILE; fd++){
