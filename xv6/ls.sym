@@ -11,11 +11,11 @@
 00000000 .debug_loc
 00000000 .debug_ranges
 00000000 ls.c
-00000de4 buf.1096
+00000de4 buf.1098
 00000000 ulib.c
 00000000 printf.c
 00000650 printint
-00000abc digits.1085
+00000abc digits.1087
 00000000 umalloc.c
 00000df4 freep
 00000df8 base
@@ -52,6 +52,7 @@
 00000100 ls
 000005a3 exit
 00000530 atoi
+00000643 csc
 000003c0 strlen
 000005e3 open
 00000420 strchr

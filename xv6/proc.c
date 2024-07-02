@@ -589,7 +589,7 @@ int csc(int pid)
   {
     if (process->pid == pid)
     {
-      cprintf("Number of Context Switches for process %s: is %d", process->name, process->context_switches);
+      cprintf("Number of Context Switches for process %s: is %d\n", process->name, process->context_switches);
     }
   }
 

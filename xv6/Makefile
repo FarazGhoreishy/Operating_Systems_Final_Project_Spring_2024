@@ -182,7 +182,7 @@ UPROGS=\
 	_wc\
 	_zombie\
 	_test\
-	_matrix_multiplication\
+	_mat_mul\
 	_csc\
 
 fs.img: mkfs README $(UPROGS)
@@ -252,7 +252,7 @@ qemu-nox-gdb: fs.img xv6.img .gdbinit
 
 EXTRA=\
 	mkfs.c ulib.c user.h cat.c echo.c forktest.c grep.c kill.c\
-	ln.c ls.c mkdir.c rm.c stressfs.c usertests.c wc.c test.c matrix_multiplication.c csc.c zombie.c\
+	ln.c ls.c mkdir.c rm.c stressfs.c usertests.c wc.c test.c mat_mul.c csc.c zombie.c\
 	printf.c umalloc.c\
 	README dot-bochsrc *.pl toc.* runoff runoff1 runoff.list\
 	.gdbinit.tmpl gdbutil\
